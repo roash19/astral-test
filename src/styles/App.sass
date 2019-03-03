@@ -1,0 +1,431 @@
+/*Reset style*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1 !important
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+/* ================================================ */
+$font-weight: 400
+$font-size: 16px
+$line-height: 1
+$font-family: 'Roboto'
+$color: #000
+
+body
+  color: $color
+  font: $font-weight $font-size/$line-height $font-family, Arial, sans-serif
+  background: #fff
+
+
+/* MAIN STYLES */
+/* ================================================ */
+.container-fluid
+  max-width: 100%
+
+.container
+  max-width: 1920px
+  margin: auto
+  padding: 0 10px
+
+img
+  display: block
+  max-width: 100%
+
+button, input, textarea, select
+  outline: none
+
+button
+  cursor: pointer
+
+*
+  box-sizing: border-box
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+
+.d-flex
+  display: flex
+
+.align-center
+  align-items: center
+
+.justify-between
+  justify-content: space-between
+
+.pos-rel
+  position: relative
+
+.text
+  font-family: Roboto
+  font-weight: 400
+  color: #000000
+  font-size: 16px
+  &_white
+    color: #f0f0f0
+  &_grey
+    color: #9b9b9b
+
+.separate
+  width: 100%
+  max-width: 200px
+  height: 2px
+  background-color: #5e5e5e
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 230px
+  height: 35px
+  border-radius: 20px
+  border: 1px solid #d3d3d3
+  background-color: transparent
+  color: #000000
+  font-family: Roboto
+  font-size: 14px
+  font-weight: 400
+  line-height: 16px
+  transition: all 0.3s ease
+  &__more
+    width: 200px
+    height: 50px
+    border-radius: 3px
+  &:hover
+    background-color: #333333
+    color: #f0f0f0
+
+.firstUpper::first-letter
+  text-transform: uppercase
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.allcontent
+  width: 100%
+  height: 100vh
+  display: flex
+
+.body
+  flex-grow: 1
+  overflow-y: auto
+
+
+
+/* SIDENAV STYLES */
+/* ================================================ */
+.sideNav
+  width: 400px
+  min-width: 400px
+  background-color: #333333
+  padding: 50px 40px
+  &_mobile
+    display: none
+  &__title
+    font-size: 36px
+  &__descr
+    font-size: 14px
+    line-height: 16px
+    margin-top: 20px
+    margin-bottom: 30px
+  &__social
+    margin-top: 30px
+
+.nav
+  padding-top: 30px
+  padding-bottom: 15px
+  &__item
+    display: block
+    margin-bottom: 15px
+  &__link
+    display: block
+    width: 100%
+    color: #969696
+    line-height: 25px
+    text-transform: uppercase
+    text-decoration: none
+    transition: all 0.3s ease
+    &:hover
+      color: #f0f0f0
+
+
+.socialLinks
+  display: flex
+  &__item
+    display: block
+    width: 20px
+    height: 20px
+    margin-right: 20px
+  &__link
+    display: block
+    width: 100%
+    height: 100%
+    transition: all 0.3s ease
+    &_facebook
+      background: url("../assets/images/FacebookIcon.svg") center center no-repeat
+      background-size: cover
+      &:hover
+        background: url("../assets/images/FacebookIcon-hover.svg") center center no-repeat
+    &_instagram
+      background: url("../assets/images/InstagramIcon.svg") center center no-repeat
+      background-size: cover
+      &:hover
+        background: url("../assets/images/InstagramIcon-hover.svg") center center no-repeat
+    &_git
+      background: url("../assets/images/GithubIcon.svg") center center no-repeat
+      background-size: cover
+      &:hover
+        background: url("../assets/images/GithubIcon-hover.svg") center center no-repeat
+    &_twitter
+      background: url("../assets/images/TwitterIcon.svg") center center no-repeat
+      background-size: cover
+      &:hover
+        background: url("../assets/images/TwitterIcon-hover.svg") center center no-repeat
+    &:hover
+      transform: scale(1.5)
+
+
+
+/* HOME STYLES */
+/* ================================================ */
+.home
+  height: 100%
+  padding: 10px 40px
+  .btn__more
+    display: block
+    margin: 40px auto
+    animation: fadeIn 2s
+
+.postPreview
+  width: 100%
+  padding: 35px 0 40px
+  border-bottom: 1px solid #d3d3d3
+  animation: fadeIn 2s
+  &__title
+    color: #333333
+    font-size: 36px
+    margin-bottom: 15px
+  &__date
+    display: flex
+    color: #969696
+    text-transform: uppercase
+    margin-bottom: 15px
+    span
+      display: block
+      width: 1px
+      align-self: stretch
+      background-color: #969696
+      margin: 0 10px
+  &__text
+    font-size: 14px
+    margin-bottom: 15px
+    line-height: 16px
+  &__btn
+    text-decoration: none
+
+
+
+/* POST STYLES */
+/* ================================================ */
+.post
+  min-height: 100%
+  position: relative
+  padding: 50px 40px 130px
+  &__title
+    color: #333333
+    font-size: 36px
+    margin-bottom: 20px
+    text-align: center
+  &__date
+    justify-content: center
+    margin-bottom: 20px
+  &__separate
+    width: 100%
+    height: 1px
+    background-color: #333333
+    margin-bottom: 40px
+  &__text
+    line-height: 19px
+  &__btn
+    text-decoration: none
+    position: absolute
+    left: 50%
+    bottom: 40px
+    transform: translateX(-50%)
+
+
+
+/* COMMENTS STYLES */
+/* ================================================ */
+.comments
+  margin-top: 300px
+  &__title
+    color: #333333
+    font-size: 30px
+    margin-bottom: 20px
+
+
+.comment
+  margin-top: 30px
+  border-bottom: 1px solid black
+  &__top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 20px
+  &__name, &__email
+    max-width: 50%
+    line-height: 19px
+  &__body
+    margin-bottom: 30px
+
+
+
+/* AUTHOR STYLES */
+/* ================================================ */
+.author
+  margin: 30px 0
+  &__title
+    margin-top: 100px
+  &__item
+    font-size: 18px
+    margin-bottom: 5px
+    a
+      color: inherit
+
+
+
+/* ABOUT STYLES */
+/* ================================================ */
+.aboutTop
+  width: 100%
+  height: 200px
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about
+  padding: 30px 40px
+  &__title
+    color: #333333
+    font-size: 36px
+    margin-bottom: 30px
+  &__subTitle
+    font-size: 24px
+    color: #333333
+    margin-bottom: 20px
+  &__text
+    line-height: 19px
+    margin-bottom: 30px
+
+
+
+@media screen and (max-width: 1200px)
+  .sideNav
+    width: 320px
+    min-width: 320px
+    padding: 50px 15px
+
+@media screen and (max-width: 990px)
+  .bm-burger-button
+    display: block !important
+
+  .sideNav
+    display: none
+    &_mobile
+      display: block
+      height: 100vh
+
+  .post
+    padding-top: 90px
+
+  .home
+    padding-top: 50px
+
+
+@media screen and (max-width: 500px)
+  .home
+    padding: 50px 20px
+
+  .postPreview__title, .post__title
+    font-size: 30px
+
+  .post
+    padding: 90px 20px 130px
+
+  .about
+    padding: 30px 20px
+
+@media screen and (max-width: 450px)
+  .comment__top
+    flex-direction: column
+
+  .comment__name, .comment__email
+    max-width: 100%
+
+
+/* Position and sizing of burger button */
+.bm-burger-button
+  display: none
+  position: absolute
+  width: 33px
+  height: 25px
+  left: 15px
+  top: 25px
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars
+  background: #000000
+  height: 2px !important
+
+
+/* Color/shape of close button cross */
+.bm-cross
+  background: #fff
+
+
+
