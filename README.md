@@ -1,3 +1,11 @@
+### На макете не было комментариев и информации об авторе, поэтому я добавил их по своему усмотрению.
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
