@@ -1,9 +1,8 @@
 ### На макете не было комментариев и информации об авторе, поэтому я добавил их по своему усмотрению.
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
